@@ -1,0 +1,15 @@
+package javalearning;
+
+public class AddTwoNum {
+	public static void main(String[] args)
+	{
+		int firstNum = 6;
+		int secondNum = 10;
+		int sum = firstNum+secondNum;
+		System.out.println("sum of two numbers:"+ sum);
+	}
+
+}
+
+output:
+sum of two numbers:16
