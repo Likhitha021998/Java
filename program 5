@@ -1,0 +1,16 @@
+package javalearning;
+
+public class Multiply {
+	public static void main(String[] args)
+	{
+		int a = 10;
+		int b = 4;
+		int product = a*b;
+		System.out.println("product of two numbers:" + product);
+		
+	}
+
+}
+
+output:
+product of two numbers:40
