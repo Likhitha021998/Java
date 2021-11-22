@@ -1,0 +1,14 @@
+package javalearning;
+
+public class AsciVal {
+public static void main(String[] args)
+{
+	char ch = 'a';
+	int ascii = ch;
+	int castAscii = (int) ch;
+	System.out.println("The Ascii value of a is:"+ascii);
+}
+}
+
+output:
+The Ascii value of a is:97
