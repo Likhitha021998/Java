@@ -1,0 +1,16 @@
+package javalearning;
+
+public class AreaTriangle {
+	public static void main(String[] args)
+	{
+		float b = 13;
+		float h = 10;
+	float area = (b*h)/2;
+		System.out.println("Area of a triangle:"+area);
+				
+	}
+
+}
+
+output:
+Area of a triangle:65.0
