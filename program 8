@@ -1,0 +1,26 @@
+package javalearning;
+
+import java.util.Scanner;
+
+public class Swap {
+	public static void main(String[] args)
+	{
+		int x,y,t;
+		System.out.print("Enter the value of x and y:");
+		Scanner sc = new Scanner(System.in);
+		x = sc.nextInt();
+		y = sc.nextInt();
+		System.out.println("Before swapping numbers:"+x+" "+y);
+		t=x;
+		x=y;
+		y=t;
+		System.out.println("After swapping numbers:"+x+" "+y);
+	}
+
+}
+
+output:'
+Enter the value of x and y: 3
+4
+Before swapping numbers:3 4
+After swapping numbers:4 3
