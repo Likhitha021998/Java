@@ -1,0 +1,33 @@
+package javalearning;
+import java.util.Scanner;
+
+public class Vowel {
+	public static void main(String[] args)
+	{
+		Scanner inp = new Scanner(System.in);
+		System.out.println("\n Enter Character:");
+		char c = ((inp.nextLine()).charAt(0));
+		char z = Character.toUpperCase(c);
+		switch(z)
+		{
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+		System.out.println(c+" is a vowel");
+		break;
+		default: System.out.println(c+ " is a non-vowel character");
+		
+	
+		}
+		
+		
+	}
+
+}
+
+output:
+Enter Character:
+0
+0 is a non-vowel character
