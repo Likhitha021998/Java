@@ -1,0 +1,41 @@
+package day2javalearning;
+
+public class InsertStr {
+	public static String insertString(
+		        String originalString,
+		        String stringToBeInserted,
+		        int index)
+		    {
+		  
+		          String newString = new String();
+		  
+		        for (int i = 0; i < originalString.length(); i++) {
+		            newString += originalString.charAt(i);
+		  
+		            if (i == index) {
+		                newString += stringToBeInserted;
+		            }
+		        }
+		 
+		        return newString;
+		    }
+		    public static void main(String[] args)
+		    {
+		        String originalString = "what is this";
+		        String stringToBeInserted = "For";
+		        int index = 3;
+		  
+		        System.out.println("Original String: "+ originalString);
+		        System.out.println("String to be inserted:" + stringToBeInserted);
+		        System.out.println("String to be inserted at index: " + index);
+		        System.out.println("Modified String: "+ insertString(originalString,stringToBeInserted,index));
+		}
+}
+	
+
+
+output:
+Original String: what is this
+String to be inserted:For
+String to be inserted at index: 3
+Modified String: whatFor is this
