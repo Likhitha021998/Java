@@ -1,0 +1,16 @@
+package day2javalearning;
+
+public class ReplaceCharStr {
+	public static void main(String[] args)
+	{
+		String str = "Hello people";
+        char ch = '_';
+        int pos = 6;
+ 
+        str = str.substring(0, pos) + ch + str.substring(pos + 1);
+        System.out.println(str);
+    }
+}
+
+output:
+Hello _eople
