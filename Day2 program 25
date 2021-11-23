@@ -1,0 +1,17 @@
+package day2javalearning;
+
+public class CompareTwoStr {
+	public static void main(String args[]){  
+		   String s1="likhitha";  
+		   String s2="LIKHITHA";  
+		  
+		   System.out.println(s1.equals(s2)); 
+		   System.out.println(s1.equalsIgnoreCase(s2));
+		 }  
+		}  
+
+output:
+Comparing Helloworld and Practice : false
+Comparing world and world : true
+Comparing world and world : true
+Comparing Helloworld and world : false
