@@ -1,0 +1,20 @@
+package javalearning;
+import java.util.Arrays;
+public class ProductArr {
+	public static void main(String[] args)
+	{
+	int arr[] = {12,2,5,8,9};
+    System.out.println("The array elements are"+Arrays.toString(arr));
+    int pro = 1;        
+    for(int i:arr)
+    {
+        pro*=i;
+    }
+    System.out.println("The product of all the array elements is: "+pro);
+}
+}
+
+
+output:
+The array elements are[12, 2, 5, 8, 9]
+The product of all the array elements is: 8640
