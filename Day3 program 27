@@ -1,0 +1,22 @@
+package javalearning;
+import java.util.Arrays; 
+import java.util.stream.IntStream; 
+public class DesiredPosArr {
+		public static int[] removeArrayElement(int[] oddArray,  int index) 
+{ 
+			 if (oddArray == null || index &lt; 0 || index &gt;= oddArray.length) { 
+return oddArray; 
+  } 
+    
+    return IntStream.range(0, oddArray.length) .filter(i -&gt; i != index) .map(i -&gt;oddArray[i]).toArray(); 
+} 
+public static void main(String[] args) 
+{   
+   int[] oddArray = { 1, 3,5,7,9,11}; 
+ System.out.println("Original Array: " + Arrays.toString(oddArray));   
+ int index = 2;   
+ System.out.println("Element to be removed at index: " + index);  
+  oddArray = removeArrayElement(oddArray, index); 
+  System.out.println("Array after deleting element: "  + Arrays.toString(oddArray)); 
+} 
+}
