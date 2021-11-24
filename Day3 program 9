@@ -1,0 +1,30 @@
+package javalearning;
+import java.util.Scanner;
+public class AverageArr {
+	public static void main(String[] args) 
+    {
+	    int n,sum = 0;
+        float average;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter number of elements you want in array : ");
+        n = s.nextInt();
+        int a[] = new int[n];
+        System.out.println("Enter all the elements : ");
+        for(int i = 0; i < n ; i++)
+        {
+        	a[i] = s.nextInt();
+            sum = sum + a[i];
+        }
+        System.out.print("Sum of the array elements is : " +sum+"\n");
+        average = (float)sum / n;
+        System.out.print("Average of the array elements is : " +average);
+    }
+}
+
+output:
+Enter all the elements : 
+12
+30
+45
+Sum of the array elements is : 87
+Average of the array elements is : 29.0
